@@ -1,35 +1,17 @@
-/**
- * NOT USED YET
- */
-const url_params = new URLSearchParams(document.location.search);
-const pagination_number = 20;
-
 
 /**
- * List of recipes (json files in `recipes/` of this repository).
+ * List of recipes (json files in `recipes/` of this repository) and the webworker used to load
+ * those recipes.
  */
 const recipes = ["sponge_cake"];
-/**
- * NOT USED YET
- */
-function NextPage () {
-    const page = url_params.get("page", 1);
-    if 
-}
-
-/**
- * NOT USED YET
- */
-function LastPage () {
-    const page = url_params.get("page", 1);
-    if (page == 0 ) {
-        
-    }
-}
+const worker = Array.from('get_recipe.js');
+worker.onmessage = function(new_element) {
+    document.getElementById(id).appendChild(new_element);
+};
 
 /**
  * Load the table with all the recipe info, uses web workers and async calls to update the table.
  */
-function LoadTable() {
-    const workers = Array.from();
+function LoadTable(id) {
+    rows = recipes.forEach((file) => worker.postMessage(file));
 }

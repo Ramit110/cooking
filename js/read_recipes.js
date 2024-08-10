@@ -14,7 +14,6 @@ const recipes = ["sponge_cake"];
  */
 function NextPage () {
     const page = url_params.get("page", 1);
-    if 
 }
 
 /**
@@ -31,5 +30,5 @@ function LastPage () {
  * Load the table with all the recipe info, uses web workers and async calls to update the table.
  */
 function LoadTable() {
-    const workers = Array.from();
+    const workers = Array.from('get_recipe.js');
 }

@@ -13,5 +13,5 @@ worker.onmessage = function(new_element) {
  * Load the table with all the recipe info, uses web workers and async calls to update the table.
  */
 function LoadTable() {
-    rows = recipes.forEach((file) => worker.postMessage(file));
+    rows = recipes.forEach((file) => worker.postMessage(`${Window.location.origin}/recipes/${recipe_name}.json`));
 }

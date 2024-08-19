@@ -4,7 +4,7 @@
  * those recipes.
  */
 const recipes = ["sponge_cake"];
-const worker = new Worker('get_recipe.js');
+const worker = new Worker('js/get_recipe.js');
 worker.onmessage = function(new_element) {
     document.getElementById("CookingTable").appendChild(new_element);
 };

@@ -1,13 +1,14 @@
 
-onmessage = function (recipe_name) {
+onmessage = async function (recipe_name) {
     try {
-        const response = fetch(recipe_name);
+        const response = await fetch(recipe_name);
         if (!response.ok) {
-          postMessage(null);
+          this.postMessage(document.createElement("tr"));
         }
-    
+
         const json = response.json();
         console.log(json);
+
         const new_tr = document.createElement("tr");
         const name = document.createElement("th");
         new_tr.append(name);
@@ -20,8 +21,9 @@ onmessage = function (recipe_name) {
         const recipe = document.createElement("th");
         new_tr.append(recipe);
         postMessage(new_tr);
+
       } catch (error) {
         console.error(error.message);
-        postMessage(null);
+        postMessage(document.createElement("tr"));
       }
 }

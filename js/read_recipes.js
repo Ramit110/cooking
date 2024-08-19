@@ -4,7 +4,7 @@
  * those recipes.
  */
 const recipes = ["sponge_cake"];
-const worker = Array.from('get_recipe.js');
+const worker = new Worker('get_recipe.js');
 worker.onmessage = function(new_element) {
     document.getElementById("CookingTable").appendChild(new_element);
 };
@@ -13,5 +13,5 @@ worker.onmessage = function(new_element) {
  * Load the table with all the recipe info, uses web workers and async calls to update the table.
  */
 function LoadTable() {
-    rows = recipes.forEach((file) => worker.postMessage(file));
+    rows = recipes.forEach((file) => worker.postMessage(`${Window.location.origin}/recipes/${recipe_name}.json`));
 }

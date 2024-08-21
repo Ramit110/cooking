@@ -14,6 +14,6 @@ function LoadTable() {
         worker.onmessage = function(new_element) {
             document.getElementById("CookingTable").appendChild(new_element);
         };
-        worker.postMessage(document, `${window.location.origin}/recipes/${file}.json`);
+        worker.postMessage([document, `${window.location.origin}/recipes/${file}.json`]);
     });
 }

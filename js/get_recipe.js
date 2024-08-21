@@ -1,8 +1,8 @@
 
-onmessage = async (message) => {
+onmessage = (message) => {
   recipe_name = message.data
   console.log(recipe_name);
-  await fetch(recipe_name).then(response => {
+  fetch(recipe_name).then(response => {
     if (!response.ok) {
       console.error(response);
       this.postMessage(null);

@@ -32,6 +32,6 @@ function LoadTable() {
             }
 
         };
-        worker.postMessage(`${window.location.origin}/recipes/${file}.json`);
+        worker.postMessage(`${window.location.origin}/cooking/recipes/${file}.json`);
     });
 }

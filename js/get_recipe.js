@@ -1,6 +1,5 @@
 
 onmessage = async (message) => {
-  console.log(message.data);
   const request = new Request(message.data);
   try {
     const response = await fetch(request);

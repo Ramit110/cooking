@@ -1,6 +1,7 @@
 
 onmessage = async function (recipe_name) {
     try {
+        console.error(recipe_name);
         const response = await fetch(recipe_name);
         if (!response.ok) {
           this.postMessage(document.createElement("tr"));

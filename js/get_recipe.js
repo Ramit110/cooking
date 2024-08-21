@@ -1,5 +1,5 @@
 
-onmessage = async function (recipe_name) {
+onmessage = async function (document, recipe_name) {
     try {
         console.error(recipe_name);
         const response = await fetch(recipe_name);

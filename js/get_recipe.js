@@ -9,8 +9,8 @@ onmessage = async (message) => {
       this.postMessage(null);
     }
 
-    console.log(await response.json());
-    postMessage(await response.json());
+    const json = await response.json();
+    postMessage(json);
   }
   catch (error) {
     console.error(error.message);

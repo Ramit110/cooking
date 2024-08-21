@@ -1,8 +1,9 @@
 
-onmessage = (message) => {
-  recipe_name = message.data
-  console.log(recipe_name);
-  fetch(recipe_name).then(response => {
+onmessage = async (message) => {
+  console.log(message.data);
+  const request = new Request(message.data);
+  try {
+    const response = await fetch(request);
     if (!response.ok) {
       console.error(response);
       this.postMessage(null);
@@ -10,8 +11,9 @@ onmessage = (message) => {
 
     console.log(response.json());
     postMessage(response.json());
-  }).catch(error => {
+  }
+  catch (error) {
     console.error(error.message);
     postMessage(null);
-  });
+  };
 }

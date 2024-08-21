@@ -12,8 +12,26 @@ function LoadTable() {
     rows = recipes.forEach((file) => {
         const worker = new Worker('js/get_recipe.js');
         worker.onmessage = function(new_element) {
-            document.getElementById("CookingTable").appendChild(new_element);
+            if (new_element === null) {
+                console.error("Nice");
+            }
+            else
+            {
+                const new_tr = document.createElement("tr");
+                const name = document.createElement("th");
+                new_tr.append(name);
+                const tools = document.createElement("th");
+                new_tr.append(tools);
+                const tags = document.createElement("th");
+                new_tr.append(tags);
+                const ingredients = document.createElement("th");
+                new_tr.append(ingredients);
+                const recipe = document.createElement("th");
+                new_tr.append(recipe);
+                document.getElementById("CookingTable").appendChild(new_tr);
+            }
+
         };
-        worker.postMessage([document, `${window.location.origin}/recipes/${file}.json`]);
+        worker.postMessage(`${window.location.origin}/recipes/${file}.json`);
     });
 }

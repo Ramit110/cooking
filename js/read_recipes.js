@@ -25,23 +25,23 @@ function LoadTable() {
                 const new_tr = document.createElement("tr");
 
                 const name = document.createElement("th");
-                name.innerHTML = new_element['name']
+                name.innerHTML = new_element['name'];
                 new_tr.append(name);
 
                 const tools = document.createElement("th");
-                tools.innerHTML = new_element['tools'].join('<br/>')
+                tools.innerHTML = new_element['tools'].join('<br/>');
                 new_tr.append(tools);
 
                 const tags = document.createElement("th");
-                tags.innerHTML = new_element['tags'].join('<br/>')
+                tags.innerHTML = new_element['tags'].join('<br/>');
                 new_tr.append(tags);
 
                 const ingredients = document.createElement("th");
-                ingredients.innerHTML = new_element['ingredients'].join('<br/>')
+                ingredients.innerHTML = new_element['ingredients'].join('<br/>');
                 new_tr.append(ingredients);
 
                 const recipe = document.createElement("th");
-                recipe.innerHTML = new_element['recipe'].join('<br/>')
+                recipe.innerHTML = new_element['recipe'].join('<br/>');
                 new_tr.append(recipe);
 
                 document.getElementById("CookingTable").appendChild(new_tr);

@@ -30,15 +30,15 @@ function LoadTable() {
                 new_tr.append(name);
 
                 const tools = document.createElement("th");
-                tools.innerHTML = new_element['tools']
+                tools.innerHTML = new_element['tools'].join('<br/>')
                 new_tr.append(tools);
 
                 const tags = document.createElement("th");
-                tags.innerHTML = new_element['tags']
+                tags.innerHTML = new_element['tags'].join('<br/>')
                 new_tr.append(tags);
 
                 const ingredients = document.createElement("th");
-                ingredients.innerHTML = new_element['ingredients']
+                ingredients.innerHTML = new_element['ingredients'].join('<br/>')
                 new_tr.append(ingredients);
 
                 const recipe = document.createElement("th");

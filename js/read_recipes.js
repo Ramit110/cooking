@@ -22,7 +22,6 @@ function LoadTable() {
             }
             else
             {
-                console.log(new_element);
                 const new_tr = document.createElement("tr");
 
                 const name = document.createElement("th");
@@ -42,7 +41,7 @@ function LoadTable() {
                 new_tr.append(ingredients);
 
                 const recipe = document.createElement("th");
-                recipe.innerHTML = new_element['recipe']
+                recipe.innerHTML = new_element['recipe'].join('<br/>')
                 new_tr.append(recipe);
 
                 document.getElementById("CookingTable").appendChild(new_tr);

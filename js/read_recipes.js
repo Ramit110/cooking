@@ -21,6 +21,7 @@ function LoadTable() {
             }
             else
             {
+                console.log(new_element);
                 const new_tr = document.createElement("tr");
 
                 const name = document.createElement("th");

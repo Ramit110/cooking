@@ -15,7 +15,8 @@ const recipes = ["sponge_cake"];
 function LoadTable() {
     rows = recipes.forEach((file) => {
         const worker = new Worker('js/get_recipe.js');
-        worker.onmessage = function(new_element) {
+        worker.onmessage = function(message) {
+            const new_element = message.data;
             if (new_element === null) {
                 console.error("Nice");
             }

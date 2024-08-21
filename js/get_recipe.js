@@ -1,9 +1,9 @@
 
-onmessage = (message) => {
+onmessage = async (message) => {
   recipe_name = message.data
   try {
     console.log(recipe_name);
-    const response = fetch(recipe_name);
+    const response = await fetch(recipe_name);
     if (!response.ok) {
       console.error(response);
       this.postMessage(null);

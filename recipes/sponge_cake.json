@@ -3,8 +3,8 @@
     "tools": ["Scale", "Measuring Teaspoons", "Cake Tin", "Oven", "Mixing Bowls", "Whisk",
               "Stand Mixer (Optional)", "Baking Paper (optional)"],
     "tags": ["Cake", "Dessert", "Sweet"],
-    "ingredients": ["250g Room Temperature Butter", "150g Caster Sugar", "300g Plain Flour",
-                    "25g Baking Powder", "1 Teaspoon Vanilla Paste/Flavouring of Your Choice (optional)",
+    "ingredients": ["250g Room Temperature Butter", "150g Caster Sugar", "275g Plain Flour",
+                    "20g Baking Powder", "1 Teaspoon Vanilla Paste/Flavouring of Your Choice (optional)",
                     "2 Medium Eggs", "125ml Semi Skimmed Milk", "1/4 Teaspoon Salt",
                     "1 Tablespon Melted Butter"],
     "recipe": [
@@ -12,13 +12,13 @@
         "1b. Line the baking tin with baking paper and spread some melted butter onto it",
         "1c. Prepare the butter and caster sugar for beating in a large mixing bowl",
         "1d. Mix the dry (Plain Flower, Baking Powder and Salt) ingredients together in a second bowl",
-        "1e. Measure out the remaining ingredients (Vanilla Paste, 2 Eggs and Milk)",
+        "1e. Measure out the remaining ingredients (Vanilla Paste, Eggs and Milk)",
         "2. Beat the butter and caster sugar together until light and fluffy",
         "3. Add the Vanilla Paste to the beaten butter",
-        "4. Add the 2 Eggs 1 by 1 to the beaten butter being careful to keep it light and airy",
+        "4. Add the Eggs 1 by 1 to the beaten mixture being careful to keep it light and airy",
         "5. Slowly add in the mixed dry ingredients and milk bit by bit until all the ingredients are mixed together",
         "6. Place the mixture into the baking tin",
-        "7. Bake in the oven for 45 minutes. Test if fully cooked by stabbing it with a knife, if it is then the knife will not have any batter on it",
+        "7. Bake in the oven for 50 minutes. Test if fully cooked by stabbing it with a knife, if it is then the knife will not have any batter on it",
         "8. Once cooked through to the middle, take out of the oven, remove the baking tin and let the cake cool for 10-15 minutes"
     ]
 }

@@ -7,7 +7,7 @@ window.onload = function() {
  * List of recipes (json files in `recipes/` of this repository) and the webworker used to load
  * those recipes.
  */
-const recipes = ["sponge_cake"];
+const recipes = ["apple_sauce", "bread", "sponge_cake", "whipped_cream"];
 
 /**
  * Load the table with all the recipe info, uses web workers and async calls to update the table.

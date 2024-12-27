@@ -1,0 +1,17 @@
+{
+    "name": "Bread (quick and easy)",
+    "tools": ["Stand Mixer - Dough Hook Attatchment (Optional)", "Loaf Tin", "Mixing Bowl", "Sieve"],
+    "tags": ["Bread", "Savoury"],
+    "ingredients": ["125g Bread Flour", "375g White Flour", "7g Fast Action Yeast", "25g Butter - Unsalted", "300ml Water", "2 Tablespoons Salt"],
+    "recipe": [
+        "1. Mix all of the sieved bread flour, sieved white flour and yeast in a mixing bowl",
+        "2. Knead the dough as you:",
+        "2a. Slowly add the water bit by bit",
+        "2b. Add small amuounts of the butter",
+        "3. After 10 minutes of kneading add the salt and knead it into the dough",
+        "4. Place the dough into a loafing tin, cover with some fabric and leave for 35 minutes",
+        "5. Preheat the oven to 220 degrees celcius",
+        "6. Once the dough has risen place in the middle of the oven for 25 minutes",
+        "7. Once baked remove the bread from the oven, remove it from the tin and leave to rest for 10 minutes"
+    ]
+}
